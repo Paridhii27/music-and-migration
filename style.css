@@ -66,8 +66,8 @@ li {
 }
 
 ::selection {
-  background-color: #455b93; /* Highlight color (gold in this case) */
-  color: #ffffff; /* Text color (black) */
+  background-color: #455b93;
+  color: #ffffff;
 }
 
 .music-genres {
@@ -99,15 +99,14 @@ li {
   border-radius: 10px;
   padding: 15px;
   height: 350px;
-  /* transition: background-image 0.3s ease; */
   transition: background-image 0.5s ease-in-out, transform 0.3s ease;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.blues {
-  /* background-image: url("./assets/images/reggae.jpeg"); */
+  font-family: "Mangilio";
+  font-size: 30px;
+  padding-left: 2%;
+  padding-top: 2%;
 }
 
 .genre-link:hover {
