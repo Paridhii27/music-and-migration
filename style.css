@@ -6,6 +6,27 @@
   box-sizing: border-box;
 } */
 
+@font-face {
+  font-family: "RegularFont";
+  src: url("./assets/fonts/Britney-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MediumFont";
+  src: url("./assets/fonts/Quicksand-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prociono";
+  src: url("./assets/fonts/Prociono-Regular-webfont.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: black;
   margin: 5%;
@@ -27,16 +48,51 @@ li {
 .music-genres {
   display: flex;
   flex-direction: row;
+  margin: 0 5%;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.blues {
-  width: 33%;
-}
-.hiphop {
-  width: 33%;
-}
+.blues,
+.hiphop,
 .reggae {
-  width: 33%;
+  flex: 1;
+  border: 0.5px solid blue;
+  border-radius: 10px;
+  padding: 15px;
+  height: 350px;
+  transition: background-image 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blues:hover {
+  background-image: url("./assets/images/blues.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.hiphop:hover {
+  background-image: url("./assets/images/hiphop.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.reggae:hover {
+  background-image: url("./assets/images/reggae.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.link-sources {
+  padding: 5% 2%;
 }
 
 nav {
@@ -44,7 +100,7 @@ nav {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  font-family: "Instrument Sans", sans-serif;
+  font-family: "Prociono", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -96,7 +152,7 @@ nav {
 
 #menu a {
   color: white;
-  font-family: "Instrument Sans", sans-serif;
+  font-family: "MediumFont", sans-serif;
   font-optical-sizing: auto;
   font-weight: 450;
   font-style: normal;
