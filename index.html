@@ -6,7 +6,7 @@
     <title>Music and Migration</title>
   </head>
   <body>
-    <!-- Navigation -->
+   
     <div class="navigation-container">
       <nav role="navigation">
         <a href="../../index.html" class="logo">★</a>
@@ -24,34 +24,58 @@
       </nav>
     </div>
     <div>
-      <p>
-        “Ethnomusicology is the study of why, and how human beings are musical…
-        “Musical” in this definition does not refer to musical talent or
-        ability, rather it refers to the capacity of humans to create, perform,
-        organize cognitively, react physically and emotionally to, and interpret
-        the meaning of humanly organized sounds.” (Rice, 2014, p. 1) Sounds and
-        music are inherent to human nature. Ethnomusicology looks at music in
-        relation to its cultural anthropology, geographical and historical
-        extent, social contexts as well as biological factors. Through the
-        perspective of ethnomusicology music is inherent to human nature. So how
-        does this music transmit human experiences and feelings across spatial
-        and temporal distances? Can music be a unifying factor bringing together
-        communities from disparate lands? How does music shift and evolve as it
-        crosses spatial boundaries through the migration of communities of
-        people and what are the kinds of memories embedded in such music?
-      </p>
+      <h1>Music, Migration and Memories</h1>
+      <p>Migration has been an important element for cultural exchange through the years. Bringing with it diverse music, art, languages and experiences across spatial and temporal boundaries. In the early years there was little interest in the phenomenon of migration in regards to music other than how it related to the diffusion of artefacts such as musical instruments from one culture to another. (Baily & Collyer, 2006, p. 168) However, over the years migrants have now been identified as catalysts for cultural exchange leading to fusion of music styles and emergence of new musical genres. Such music serves as a repository of shared experiences, cultural heritage, and emotions connecting the past to the present. The music that emerges from migration often serves as a powerful dual force. At times, it acts as a painful reminder of the hardships and losses of the past, evoking feelings of longing, grief, or nostalgia. At other times, it becomes a means for the migrant to maintain a sense of connection to their home, tethering them to their roots as they navigate life in an unfamiliar land. </p>
       <div class="music-genres">
-        <div class="blues" data-audio="./assets/sounds/placeholder.mp3">
-          <p>blues</p>
-        </div>
-        <div class="hiphop" data-audio="./assets/sounds/placeholder.mp3">
-          <p>hiphop</p>
-        </div>
-        <div class="reggae" data-audio="./assets/sounds/placeholder.mp3">
-          <p>reggae</p>
-        </div>
+      <div
+        class="genre-link blues"
+        data-modal="bluesModal"
+        data-audio="./assets/sounds/placeholder.mp3"
+      >
+        Blues
+      </div>
+      <div
+        class="genre-link hiphop"
+        data-modal="hiphopModal"
+        data-audio="./assets/sounds/placeholder.mp3"
+      >
+        Hip Hop
+      </div>
+      <div
+        class="genre-link reggae"
+        data-modal="reggaeModal"
+        data-audio="./assets/sounds/placeholder.mp3"
+      >
+        Reggae
       </div>
     </div>
+
+    <div id="bluesModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Blues Modal</h2>
+        <p>Blues content goes here</p>
+      </div>
+    </div>
+
+    <div id="hiphopModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Hip Hop Modal</h2>
+        <p>Hip Hop content goes here</p>
+      </div>
+    </div>
+
+    <div id="reggaeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Reggae Modal</h2>
+        <p>The circumstances of migration are often critical as well as it shapes the way a culture is remembered and highlights the amalgamation of one’s past cultural identity with their present reality and circumstances. As the migrants are displaced from “a culture which is familiar to them to one that is not, in which they are likely to be in a minority”. (Baily & Collyer, 2006, p. 170)  There is also an urge for them to find a sense of belonging in the world. The memories of the migrants are like a personal lens to the past. These memories are reflective of their lived human experiences and feelings and music possesses a unique ability of bridging both spatial and temporal distances to help them maintain a connection to their homeland and in encapsulating their cultural and personal identities. 
+        </p>
+      </div>
+    </div>
+    <p id="guide-info">Click to learn more</p>
   </body>
   <script src="./script.js"></script>
 </html>
+
